@@ -40,7 +40,7 @@ y se lo añadirá a los hobbies del objeto hasta que éstos últimos sean 8, no 
 
 // let arr = ["dancing", "movies", "traveling", "eating", "exercise", "museums"];
 // const addHobbies = function(arr){
-//     megaTeacher.hobbies.push(...arr); // use los tres puntos para unir dos arrays
+//     megaTeacher.hobbies.push(...arr);  // use los tres puntos para unir dos arrays
 //     megaTeacher.hobbies.splice(8);
 // }
 // addHobbies(arr);
@@ -60,18 +60,18 @@ y se lo añadirá a los hobbies del objeto hasta que éstos últimos sean 8, no 
 // setPeronInfo("Daniel", "leon", 25 , false);
 // console.log(megaTeacher);
 
+// megaTeacher.setPeronInfo = function() {
+//     return `hola mi nombre es ${this.name = "daniel"} ${this.lastname= "leon"}, tengo ${this.age=25}. ¿soy vegano? ${this.vegan= false}`
+//  }
+//  console.log(megaTeacher.setPeronInfo());
 /*
 5. Escribe un método que te permita modificar la dirección.
  */
 
-// const setDireccion = function(calle, portal, piso) {
-//     megaTeacher.address.street = calle;
-//     megaTeacher.address.number = portal;
-//     megaTeacher.address.floor = piso;
+// megaTeacher.setDireccion = function() {
+//     return `Mi direccion es Calle ${this.address.street = "Nuñez de balboa"}, ${this.address.number=105} piso ${this.address.floor = 6}`
 // }
-
-// setDireccion("Nuñez de balboa", 105 , 6);
-// console.log(megaTeacher);
+// console.log(megaTeacher.setDireccion());
 
 /*
 6.Modifica el metodo anterior para poder añadir una segunda dirección.
@@ -93,18 +93,17 @@ Si existe, imprima el libro en mayusculas. Si no existe agregar a la lista de li
 */
 
 
-// const verificarLibro = function(libro){
-//   libro = prompt("ingrese el nombre del libro:");
-//   if (megaTeacher.books.includes(libro)) {
-//         console.log(`Si esta el libro ${libro.toUpperCase()}`);
-//   }else{
-//     megaTeacher.books.push(libro);
-//     console.log(`No esta el libro. pero se ha agregado a la lista`);
-//     console.log(megaTeacher.books);
-//   }
-// }
-// verificarLibro();
-
+const verificarLibro = function(libro){
+  libro = prompt("ingrese el nombre del libro:");
+  if (megaTeacher.books.includes(libro)) {
+        console.log(`Si esta el libro ${libro.toUpperCase()}`);
+  }else{
+    megaTeacher.books.push(libro);
+    console.log(`No esta el libro. pero se ha agregado a la lista`);
+    console.log(megaTeacher.books);
+  }
+}
+verificarLibro();
 
 /*
 8.Escribe una función que te permita añadir películas. 
