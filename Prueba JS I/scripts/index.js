@@ -41,7 +41,7 @@ y se lo añadirá a los hobbies del objeto hasta que éstos últimos sean 8, no 
 // let arr = ["dancing", "movies", "traveling", "eating", "exercise", "museums"];
 // const addHobbies = function(arr){
 //     megaTeacher.hobbies.push(...arr);  // use los tres puntos para unir dos arrays
-//     megaTeacher.hobbies.splice(8);
+//     megaTeacher.hobbies.splice(megaTeacher.hobbies.length - 2, 8);
 // }
 // addHobbies(arr);
 // console.log(megaTeacher.hobbies);
@@ -67,8 +67,8 @@ y se lo añadirá a los hobbies del objeto hasta que éstos últimos sean 8, no 
 6.Modifica el metodo anterior para poder añadir una segunda dirección.
  */
 
-// const addDireccion2 = function() {
-//     megaTeacher.address2 = {
+// const addDirecciontwo = function() {
+//     megaTeacher.addresstwo = {
 //         street: "sol",
 //         number: 44,
 //         floor: 6
@@ -78,25 +78,25 @@ y se lo añadirá a los hobbies del objeto hasta que éstos últimos sean 8, no 
 // console.log(megaTeacher);
 
 /*
-7.Escribe un método que en el array de libros, verifique si un libro existe en el array. 
+7.Escribe un método que en el array de libros, verifique si un libro existe en el array.
 Si existe, imprima el libro en mayusculas. Si no existe agregar a la lista de libros.
 */
 
 
-const verificarLibro = function(libro){
-  libro = prompt("ingrese el nombre del libro:");
-  if (megaTeacher.books.includes(libro)) {
-        console.log(`Si esta el libro ${libro.toUpperCase()}`);
-  }else{
-    megaTeacher.books.push(libro);
-    console.log(`No esta el libro. pero se ha agregado a la lista`);
-    console.log(megaTeacher.books);
-  }
-}
-verificarLibro();
+// const verificarLibro = function(libro){
+//   libro = prompt("ingrese el nombre del libro:");
+//   if (megaTeacher.books.includes(libro)) {
+//         console.log(`Si esta el libro ${libro.toUpperCase()}`);
+//   }else{
+//     megaTeacher.books.push(libro);
+//     console.log(`No esta el libro. pero se ha agregado a la lista`);
+//     console.log(megaTeacher.books);
+//   }
+// }
+// verificarLibro();
 
 /*
-8.Escribe una función que te permita añadir películas. 
+8.Escribe una función que te permita añadir películas.
 Y si no tiene parámetro de entrada te retorne la película de en medio.
  */
 
