@@ -50,16 +50,6 @@ y se lo añadirá a los hobbies del objeto hasta que éstos últimos sean 8, no 
 4.Escribe un método que te permita modificar los datos personales.
 */
 
-//  const setPeronInfo = (name, lastName, age, vengan)=>{
-//     megaTeacher.name = name;
-//     megaTeacher.lastname = lastName;
-//     megaTeacher.age = age;
-//     megaTeacher.vegan = vengan;
-//  }
-
-// setPeronInfo("Daniel", "leon", 25 , false);
-// console.log(megaTeacher);
-
 // megaTeacher.setPeronInfo = function() {
 //     return `hola mi nombre es ${this.name = "daniel"} ${this.lastname= "leon"}, tengo ${this.age=25}. ¿soy vegano? ${this.vegan= false}`
 //  }
